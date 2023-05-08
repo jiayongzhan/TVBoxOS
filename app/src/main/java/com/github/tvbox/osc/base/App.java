@@ -61,6 +61,12 @@ public class App extends MultiDexApplication {
         if (!Hawk.contains(HawkConfig.PLAY_TYPE)) {
             Hawk.put(HawkConfig.PLAY_TYPE, 1);
         }
+        if (!Hawk.contains(HawkConfig.IJK_CODEC)) {
+            Hawk.put(HawkConfig.IJK_CODEC, "硬解码");
+        }
+        if (!Hawk.contains(HawkConfig.HOME_REC)) {
+            Hawk.put(HawkConfig.HOME_REC, 1);
+        }        
     }
 
     public static App getInstance() {
